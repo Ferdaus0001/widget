@@ -1,6 +1,7 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:projict_one/widget/presentation/screens/text_widget_screen.dart';
 
 import 'home_screen.dart';
 
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           title: 'Flutter Demo',
           theme: ThemeData(
+
             colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
             appBarTheme: AppBarTheme(
               color: Colors.blue,
@@ -36,7 +38,7 @@ class MyApp extends StatelessWidget {
             ),
             useMaterial3: true,
           ),
-          home: HomeScreen(),
+          home: TextWidgetScreen(),
           builder: DevicePreview.appBuilder, // Device Preview যোগ করা হলো
           locale: DevicePreview.locale(context), // ভাষা সাপোর্টের জন্য
         );
